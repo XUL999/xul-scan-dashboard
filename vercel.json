@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "name": "xul-scan-dashboard",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_CHAIN_ID": "12309",
+    "NEXT_PUBLIC_RPC_URL": "https://pro.rswl.ai",
+    "NEXT_PUBLIC_EXPLORER_URL": "https://scan.rswl.ai"
+  }
+}
