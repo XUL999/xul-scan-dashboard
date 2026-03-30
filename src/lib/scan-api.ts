@@ -26,7 +26,7 @@ export const OFFICIAL_CONTRACTS: Record<string, { name: string; category: string
 
 // API 封装
 class XULScanAPI {
-  private baseUrl: string;
+  public baseUrl: string;
   
   constructor(baseUrl: string = BASE_URL) {
     this.baseUrl = baseUrl;
