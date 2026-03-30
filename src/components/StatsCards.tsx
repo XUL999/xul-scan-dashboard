@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, TrendingDown, Wallet, Activity, Block, Zap } from 'lucide-react';
+import { TrendingUp, TrendingDown, Wallet, Activity, Blocks, Zap } from 'lucide-react';
 import { api, formatBalance, CHAIN_CONFIG } from '../lib/scan-api';
 
 interface StatsCardProps {
@@ -86,7 +86,7 @@ export const OverviewStats: React.FC = () => {
         title="最新区块"
         value={`#${stats.blockNumber.toLocaleString()}`}
         subtitle={CHAIN_CONFIG.name}
-        icon={<Block className="w-6 h-6" />}
+        icon={<Blocks className="w-6 h-6" />}
       />
       <StatsCard
         title="总交易数"

@@ -1,16 +1,9 @@
 {
   "version": 2,
-  "name": "xul-scan-dashboard",
   "builds": [
     {
       "src": "package.json",
       "use": "@vercel/next"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
     }
   ],
   "env": {
